@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace LetsHungry.DataAccessLayer.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
-    {
+    {   
         protected readonly LetsHungryDbContext _db;
         private readonly DbSet<T> _dbSet;
 
